@@ -1,0 +1,38 @@
+{
+  "Build Plugin": {
+    "prefix": "BuildPlugin",
+    "body": [
+      "//META{\"name\": \"${1:pluginMame}\"}*//",
+      "var ${2:pluginMame} = (function () {",
+      "    const config = {",
+      "        \"info\": {",
+      "            \"name\": \"${3:pluginMame}\",",
+      "            \"author\": \"${4:your_name}\",",
+      "            \"description\": \"${5:Description}\",",
+      "            \"version\": \"0.0.1\"",
+      "        }",
+      "    };",
+      "    class ${6:pluginMame} {",
+      "        getName() {",
+      "            return config.info.name;",
+      "        };",
+      "        getAuthor() {",
+      "            return config.info.author;",
+      "        };",
+      "        getDescription() {",
+      "            return config.info.description;",
+      "        };",
+      "        getVersion() {",
+      "            return config.info.version;",
+      "        };",
+      "        load() { };",
+      "        unload() { this.stop() };",
+      "        start() { $8};",
+      "        stop() { };",
+      "    }",
+      "    return ${7:pluginMame};",
+      "})()"
+    ],
+    "description": "Build's a plugin."
+  }
+}

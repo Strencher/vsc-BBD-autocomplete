@@ -1,0 +1,16 @@
+{
+  "Builds's a META for a theme to load him": {
+    "prefix": "META",
+    "body": [
+      "/**",
+      "* @name ${1:your_themeName}",
+      "* @author ${2: your_name} ",
+      "* @version 1.0.0",
+      "* @description ${3:your_theme_description}",
+      "* @source ${4:github_source}",
+      "* @website ${5:your_webside (not required)}",
+      "*/"
+    ],
+    "description": "Builds's a META for a theme to load him"
+  }
+}
