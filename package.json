@@ -23,7 +23,11 @@
 			{
 				"language": "javascript",
 				"path": "./snippets/js.json"
-			}
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/zlibrary.json"
+            }
 		]
 	},
 	"__metadata": {
