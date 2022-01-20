@@ -2,17 +2,17 @@
   "Build Plugin": {
     "prefix": "BuildPlugin",
     "body": [
-      "//META{\"name\": \"${1:pluginMame}\"}*//",
-      "var ${2:pluginMame} = (function () {",
+      "//META{\"name\": \"${1:pluginName}\"}*//",
+      "var ${2:pluginName} = (function () {",
       "    const config = {",
       "        \"info\": {",
-      "            \"name\": \"${3:pluginMame}\",",
+      "            \"name\": \"${3:pluginName}\",",
       "            \"author\": \"${4:your_name}\",",
       "            \"description\": \"${5:Description}\",",
       "            \"version\": \"0.0.1\"",
       "        }",
       "    };",
-      "    class ${6:pluginMame} {",
+      "    class ${6:pluginName} {",
       "        getName() {",
       "            return config.info.name;",
       "        };",
@@ -30,7 +30,7 @@
       "        start() { $8};",
       "        stop() { };",
       "    }",
-      "    return ${7:pluginMame};",
+      "    return ${7:pluginName};",
       "})()"
     ],
     "description": "Build's a plugin."
